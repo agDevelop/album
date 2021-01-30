@@ -25,7 +25,7 @@ SECRET_KEY = 'oqx#%zu-iwfidcj^3ifo-fl8wq8c7j(#p1i=38y3_1&2-1%sdd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['photo_album.std-718.ist.mospolytech.ru']
+ALLOWED_HOSTS = ['album.std-718.ist.mospolytech.ru']
 
 
 # Application definition
@@ -62,14 +62,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
 ]
-
-REST_FRAMEWORK = {
-
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
-        'rest_framework.permissions.AllowAny'
-    ]
-}
 
 ROOT_URLCONF = 'photo_album.urls'
 
